@@ -1,0 +1,106 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  /* bottom: 50%; */
+  left: 50%;
+  width: 60%;
+  background-color: white;
+  padding: 50px 25px;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* sc; */
+}
+
+.modal__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 35px;
+  color: rgb(70, 68, 68);
+  border: none;
+  background-color: #fff;
+}
+
+.modal ul {
+  padding: 0 0 0 20px;
+}
+
+.modal__title {
+  width: 100%;
+  margin: 0;
+}
+
+.modal__desc {
+  width: 100%;
+  margin: 0;
+}
+
+.overlay {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 500;
+  /* scroll- ; */
+}
+
+@keyframes appear {
+  0% {
+    top: -150px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+.modal {
+  animation: appear 200ms ease-in 1;
+}
+
+@keyframes color {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.5;
+  }
+}
+
+.overlay {
+  animation: color 200ms ease-in 1;
+}
+
+@media only screen and (max-width: 832px) {
+  .modal {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  .modal {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .modal {
+    width: 90%;
+  }
+}
