@@ -236,6 +236,18 @@ function Menu() {
           Hammasini ko'rish
           <img src={Strelka} alt="" width="19" height="18" />
         </a> */}
+
+        <div className="menu__descs">
+          <p className="menu__desc">
+            1 - Analizlardan 1 kun oldin spirtli ichimliklar ichish, yog'li
+            taomlar istemol qilish taqiqlanadi. Kechki ovqatlanish vaqti 19:00
+            gacha tugashi kerak.
+          </p>
+          <div className="menu__desc">
+            2 - Analizlarni Ertalab och qoringa va tishlarni yuvmasdan
+            topshirish lozim.
+          </div>
+        </div>
       </div>
 
       {/* <Modal /> */}

@@ -32,7 +32,7 @@ function Footer() {
 
         <hr className="footer__line" />
         <div className="footer__bot">
-          <p>© 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+          <p>© 2022 All Rights Reserved </p>
           <div className="footer__bot_lincs">
             <a
               href="https://t.me/Shodlikklinikasi"

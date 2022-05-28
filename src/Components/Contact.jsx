@@ -5,6 +5,9 @@ import loocimg from "../Assets/img/looc.png";
 import lokatsiya from "../Assets/img/lokatsiya.svg";
 import { YMaps, Map, Placemark } from "react-yandex-maps";
 
+import img from "../Assets/img/img1.jpg";
+import img1 from "../Assets/img/img2.jpg";
+
 function Contact() {
   return (
     <div className="contact" id="contact">
@@ -120,6 +123,19 @@ function Contact() {
           </YMaps>
         </div>
       </div>
+
+      <div className="contact__images container">
+        <div className="contact__imgs">
+          <img className="contact__img" src={img} alt="" />
+        </div>
+        
+        <div className="contact__imgs">
+          <img className="contact__img contact__img1" src={img1} alt="" />
+        </div>
+      </div>
+
+      {/* <div className="contact__images">
+      </div> */}
     </div>
   );
 }
